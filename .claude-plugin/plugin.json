@@ -1,0 +1,22 @@
+{
+  "name": "lintbrain-status",
+  "version": "0.1.0",
+  "author": { "name": "pmahli" },
+  "license": "MIT",
+  "description": "Shows in the prompt footer when your Extended Brain vault was last linted, and hints when it is time to run /LintBrain.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "vaultPath": {
+      "type": "string",
+      "title": "Vault path",
+      "description": "Absolute path of your Extended Brain vault, the folder that holds the .lintbrain file. A leading ~ is allowed. Left empty, the EXTENDED_BRAIN_PATH environment variable is used.",
+      "default": ""
+    },
+    "staleAfterDays": {
+      "type": "number",
+      "title": "Stale after (days)",
+      "description": "From how many days without a lint run the footer adds the /LintBrain hint.",
+      "default": 7
+    }
+  }
+}

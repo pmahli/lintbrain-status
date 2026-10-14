@@ -1,0 +1,6 @@
+{
+  "name": "pmahli-lintbrain-status",
+  "description": "A Claude Code mod that shows when your Extended Brain vault was last linted",
+  "owner": { "name": "pmahli" },
+  "plugins": [{ "name": "lintbrain-status", "source": "./" }]
+}
